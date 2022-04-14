@@ -1,0 +1,48 @@
+  <p>
+    <mat-toolbar class="toolbar-primary">
+      <mat-toolbar-row>
+        <!-- <span class="title-primary">BookMyShow</span> -->
+        <img [src]="imagesUrl" title="BookMyShow" class="title-primary">
+        <div class="search-div" >
+          <form class="search-bar">
+            <span matPrefix> </span>
+            <button mat-icon-button class="search-icon">
+              <mat-icon>search</mat-icon>
+            </button>
+            <input type="tel" matInput placeholder="Search" name="search" class="search">
+            <br />
+            {{search}}
+          </form>
+
+        </div>
+        <span class="example-spacer"></span>
+        <div class="title-secondary">
+          <a mat-button routerLink="/contact" class="btn-signin">Sign In</a>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row class="toolbar-secondary">
+        <span class="example-spacer"></span>
+        <div fxShow="true" fxHide.lt-md="true">
+          <a mat-button routerLink="/about-us">Movies</a>
+          <a mat-button routerLink="/prices">Stream</a>
+          <a mat-button routerLink="/start-page">Events</a>
+          <a mat-button routerLink="/offer">Plays</a>
+          <a mat-button routerLink="/contact">Sports</a>
+          <a mat-button routerLink="/contact">Activities</a>
+          <a mat-button routerLink="/contact">Buzz</a>
+        </div>
+        <span class="example-spacer"></span>
+        <div>
+          <a mat-button routerLink="/offer">ListYourShow</a>
+          <a mat-button routerLink="/contact">Corporates</a>
+          <a mat-button routerLink="/contact">Offers</a>
+          <a mat-button routerLink="/contact">Gift Cards</a>
+        </div>
+        <span class="example-spacer"></span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
