@@ -10,7 +10,8 @@ export class SliderMoviesComponent implements OnInit {
   constructor() { }
   public imagesUrl:any;
   ngOnInit(): void {
-    this.imagesUrl = ['assets/images/KGF.jpg', 'assets/images/want.jpg', 'assets/images/pop.jpg','assets/images/want.jpg'];
+  //  this.imagesUrl = ['assets/images/KGF.jpg', 'assets/images/want.jpg', 'assets/images/pop.jpg','assets/images/want.jpg'];
+    this.imagesUrl = [{path:'assets/images/KGF.jpg'},{path:'assets/images/want.jpg'},{path: 'assets/images/pop.jpg'}];
   }
 
 }

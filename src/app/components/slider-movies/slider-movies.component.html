@@ -1,8 +1,17 @@
-<div class="container" ><angular-image-slider
+<!-- <div class="container" ><angular-image-slider
   [autoRotate]="true"
   [autoRotateAfter]="5000"
   [autoRotateRight]="true"
   [images]="imagesUrl"
 class="slider"></angular-image-slider>
-</div>
+</div> -->
     
+<carousel
+[height]="400"
+[cellsToShow]="1"
+[loop]="true"
+[autoplay]="true"
+[autoplayInterval]="2000"
+[dots]="true"
+    [images]="imagesUrl">
+</carousel>
